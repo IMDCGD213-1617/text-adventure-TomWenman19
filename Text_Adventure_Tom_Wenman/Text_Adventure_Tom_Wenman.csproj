@@ -46,6 +46,8 @@
     <Compile Include="Direction.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="Herb.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="invtest.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Weapon.cs" />
     <Compile Include="Game.cs" />
