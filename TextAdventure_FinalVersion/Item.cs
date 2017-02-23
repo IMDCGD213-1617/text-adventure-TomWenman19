@@ -8,9 +8,9 @@ namespace TextAdventure
 {    
 	class Item
 	{
-        public string name = " ";
-        public string desc = " ";
-        private List<Item> playerInventory;
+        public string name = " "; //The items name
+        public string desc = " "; //The items description
+        private List<Item> playerInventory; //The players inventory
         public Location UsableLocation;
 
 		public Item()

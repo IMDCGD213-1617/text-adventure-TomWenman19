@@ -42,7 +42,6 @@ namespace TextAdventure
         Location l8b;
         Location l8c;
         Location l8d;
-        Location l9;
 
 
 
@@ -151,7 +150,7 @@ namespace TextAdventure
             l5.addExit(new Exit(Exit.Directions.East, l8));
             l5.addExit(new Exit(Exit.Directions.North, l3));
             //Location 6 exits
-
+            l6.addExit(new Exit(Exit.Directions.East, l5));
             //Location 7 exits
             l7.addExit(new Exit(Exit.Directions.North, l5));
             l7b.addExit(new Exit(Exit.Directions.North, l5));
@@ -354,7 +353,7 @@ namespace TextAdventure
                             Console.Clear();
                             showLocation();
                             Console.ForegroundColor = ConsoleColor.DarkMagenta;
-                            Console.WriteLine("You are unable to perform that action, try again...");
+                            Console.WriteLine("You cannot use that item here.");
 
                             return;
                         }
@@ -414,7 +413,8 @@ namespace TextAdventure
         {
             Console.WriteLine("\n" + currentLocation.getTitle() + "\n");
             Console.WriteLine(currentLocation.getDescription());
-        //Shows the available exits for the player to take.
+       
+            //Shows the available exits for the player to take.
             
             Console.WriteLine("\nAvailable Exits: \n");
           
@@ -484,7 +484,7 @@ namespace TextAdventure
             if(currentCommand != " ")
             doAction(currentCommand);
 
-            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.G;
 		}
 	}
 }
