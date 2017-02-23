@@ -251,7 +251,9 @@ namespace TextAdventure
                             InventorySystem.AddItem(result);
                             Console.Clear();
                             showLocation();
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
                             if (result != null)
+                                
                                 Console.WriteLine("\nYou have obtained " + input[1] + "");
                             else
                                 Console.WriteLine("Item not valid");
@@ -484,7 +486,7 @@ namespace TextAdventure
             if(currentCommand != " ")
             doAction(currentCommand);
 
-            Console.ForegroundColor = ConsoleColor.G;
+            Console.ForegroundColor = ConsoleColor.Gray;
 		}
 	}
 }
